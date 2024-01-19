@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        магазин
+        {% endblock %}</title>
+</head>
+
+<body>
+    <div>
+        <ul class="box">
+            <li class="m_link"><a href="/cloathes/" class="m_link">Одежда</a></li>
+            <li class="m_link"><a href="/jackets/" class="m_link">Куртки</a></li>
+            <li class="m_link"><a href="/shoes/" class="m_link">Обувь</a></li>
+        </ul>
+
+        {% block content %}
+        Страница не заполнена
+        {% endblock %}
+
+        <div class="footer">
+            <hr>
+            <p>Все права защищены &copy;</p>
+        </div>
+    </div>
+    <script>src = "/static/css/bootstrap.bundle.min.js"</script>
+</body>
+
+</html>

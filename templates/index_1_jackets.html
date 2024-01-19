@@ -1,0 +1,22 @@
+{% extends 'shop.html' %}
+
+{% block title %}
+Куртки
+{% endblock %}
+
+{% block content %}
+<table>
+    <tr>
+        <td>{{ name }} </td>
+        <td>{{ sizes }}</td>
+        <td>{{ sale }}</td>
+    </tr>
+    {% for jackets in jackets_list %}
+    </tr>
+    <td>{{ jackets.name }} </td>
+    <td>{{ jackets.sizes }}</td>
+    <td>{{ jackets.sale }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
